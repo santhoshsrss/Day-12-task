@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form Day 12 Task</title>
+<style>
+    .mustedfg{
+        display: inline-block;
+        margin-left: 142px ;
+    }
+    .jsts{
+        display: inline-block;
+        width: 350px;
+    }
+
+    .vu1{
+        display: inline-block;
+        margin-left: 100px;
+    }
+    .vu2{
+        display: inline-block;
+        margin-left:25px;
+    }
+    .vu3{
+        display: inline-block;
+        margin-left: 25px;
+    }
+    .vu4{
+        display: inline-block;
+        margin-left: 25px;
+    }
+    .vu5{
+        display: inline-block;
+        margin-left: 25px;
+    } 
+    .putme{
+        display: inline-flex;
+    }
+
+
+    .dot1{
+        height: 25px;
+        width: 25px;
+        background-color: rgb(252, 250, 250);
+        border: 2px solid black;
+        border-radius: 50%;
+        display: inline-block;
+        margin-left: 50px;
+        margin-top: 10px;
+
+    }
+
+    .grid-items{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    border: 3px solid rgb(255, 255, 255);
+    grid-template-areas: 
+    " aa1 aa2 aa3 aa4 aa5 aa6 "
+    " aa7 aa8 aa9 aa10 aa11 aa12 " 
+    " aa13 aa14 aa15 aa16 aa17 aa18 "
+    " aa19 aa20 aa21 aa22 aa23 aa24 "
+    }
+    .col{
+    background-color: rgb(255, 255, 255);
+    margin: 10px;
+    padding: 10px;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    }
+    .col-hi p{
+        font-size: 20px;
+    }
+    .comment{
+        display: flex;
+        width: 50%;
+        height: 300px;
+        padding: 10px;
+        border: 2px solid black;
+    }
+ 
+
+
+</style>
+</head>
+<body>
+    <div class="col-hi">
+        <p><b>Name<strong style="color:red">*</strong></b></p>
+        <form>
+            <input type="text" name="fname">
+            <input type="text" name="lname">
+        </form>
+        <Label class="mosted">First</Label> 
+        <label class="mustedfg">Last</label>
+        <p><b>Email<strong style="color:red">*</strong></b><p>
+        <input class="jsts" type="email" name="email">
+        <br>
+    <div class="rating-star">
+    
+        <p><b>Your Experience<strong style="color:red">*</strong></b></p>
+    
+        <label for="star1" title="text" style="color:gold; font-size: 30px;">★</label>
+    
+        <label for="star2" title="text" style="color:gold; font-size: 30px;">★</label>
+    
+        <label for="star3" title="text" style="color:gold; font-size: 30px;">★</label>
+    
+        <label for="star4" title="text" style="color:gold; font-size: 30px; ">★</label>
+    
+        <label for="star5" title="text" style="color:gold; font-size: 30px;">★</label>
+    <p>Overall, how would you rate your experience with us?</p>
+    </div>
+    <p><b>How satisfied are you with<strong style="color:red">*</strong></b></p>
+   <div>
+    <div class="grid-items">
+        <div class="col one"></div>
+        <div class="col two">Very Unsatified</div>
+        <div class="col the">Unsatified</div>
+        <div class="col for">Neutral</div>
+        <div class="col fiv">Satified</div>
+        <div class="col six">Very Satified</div>
+        <div class="col sev">Purchased</div>
+        <div class="dot1"></div>
+        <div class="dot1"></div>
+        <div class="dot1"></div>
+        <div class="dot1"></div>
+        <div class="dot1"></div>
+        <div class="col thr">Service</div>
+        <div class="dot1"></div>
+        <div class="dot1"></div>
+        <div class="dot1"></div>
+        <div class="dot1"></div>
+        <div class="dot1"></div>
+        <div class="col tow">Company Overall</div>
+        <div class="dot1"></div>
+        <div class="dot1"></div>
+        <div class="dot1"></div>
+        <div class="dot1"></div>
+        <div class="dot1"></div>
+
+   </div>
+   <p><b>How likely are you to<strong style="color:red">*</strong></b></p>
+   <div>
+    <div class="grid-items">
+        <div class="col one"></div>
+        <div class="col two">Very Likely</div>
+        <div class="col the">Likely</div>
+        <div class="col for">Neutral</div>
+        <div class="col fiv">Likely</div>
+        <div class="col six">Very Likely</div>
+        <div class="col sev">Buy from us again</div>
+        <div class="dot1"></div>
+        <div class="dot1"></div>
+        <div class="dot1"></div>
+        <div class="dot1"></div>
+        <div class="dot1"></div>
+       
+        <div class="col thr">Recommend our product to others</div>
+        <div class="dot1"></div>
+        <div class="dot1"></div>
+        <div class="dot1"></div>
+        <div class="dot1"></div>
+        <div class="dot1"></div>
+        <div class="col tow">Recommend our company to others</div>
+        <div class="dot1"></div>
+        <div class="dot1"></div>
+        <div class="dot1"></div>
+        <div class="dot1"></div>
+        <div class="dot1"></div>
+    </div>
+    <br>
+    <p><b>Additional comments or suggestions</b></p>
+  
+        <form action="/form/submit" method="none">
+            <textarea class="comment"></textarea>
+            <br>
+            <br>
+            <button type="button" style="background-color: rgb(117, 112, 112) ;";">Submit</button>
+          </form>
+</div>
+<br>
+<br>
+</body>
+</html>
